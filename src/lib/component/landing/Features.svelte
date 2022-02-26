@@ -17,7 +17,7 @@
 
           Images from:
 
-          <a class="text-pink-500 underline" href="https://undraw.co/">undraw.co</a>
+          <a class="text-green-500 underline" href="https://undraw.co/">undraw.co</a>
         </p>
       </div>
       <div class="w-full sm:w-1/2 p-6">
@@ -437,7 +437,7 @@
             <br />
             Images from:
 
-            <a class="text-pink-500 underline" href="https://undraw.co/">undraw.co</a>
+            <a class="text-green-500 underline" href="https://undraw.co/">undraw.co</a>
           </p>
         </div>
       </div>
