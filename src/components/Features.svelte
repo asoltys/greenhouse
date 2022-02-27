@@ -1,24 +1,24 @@
+<script>
+
+  import Invoice from "$components/Invoice.svelte"
+</script>
+
 <section class="bg-white border-b py-8">
   <div class="container max-w-5xl mx-auto m-8">
-    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Features</h1>
+    <h1
+      class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+    >
+      Buy Shares
+    </h1>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
     </div>
     <div class="flex flex-wrap">
       <div class="w-5/6 sm:w-1/2 p-6">
         <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-          1Lorem ipsum dolor sit amet
+          How many shares do you want?
         </h3>
-        <p class="text-gray-600 mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc
-          commodo posuere et sit amet ligula.
-          <br />
-          <br />
-
-          Images from:
-
-          <a class="text-green-500 underline" href="https://undraw.co/">undraw.co</a>
-        </p>
+        <input />
       </div>
       <div class="w-full sm:w-1/2 p-6">
         <svg
@@ -91,7 +91,14 @@
             d="m104.42 728.69c12.51 0.1 29.06-2 32.39-4 2.54-1.55 3.55-7.09 3.89-9.65h0.37s-0.7 8.94-4 11-19.89 4.07-32.4 4c-3.61 0-4.85-1.31-4.78-3.21 0.47 1.17 1.84 1.83 4.53 1.86z"
             opacity=".2"
           />
-          <rect x="171.5" y="111.25" width="834" height="456" rx="20.42" fill="#f2f2f2" />
+          <rect
+            x="171.5"
+            y="111.25"
+            width="834"
+            height="456"
+            rx="20.42"
+            fill="#f2f2f2"
+          />
           <path
             d="m172 133.75h268v434h-247.58a20.42 20.42 0 0 1 -20.42 -20.42v-413.58z"
             fill="#ff6347"
@@ -186,8 +193,22 @@
             fill="#ff6347"
             opacity=".3"
           />
-          <rect x="878" y="279.75" width="73" height="25" rx="1.24" fill="#ff6347" />
-          <rect x="878" y="411.75" width="73" height="25" rx="1.24" fill="#ff6347" />
+          <rect
+            x="878"
+            y="279.75"
+            width="73"
+            height="25"
+            rx="1.24"
+            fill="#ff6347"
+          />
+          <rect
+            x="878"
+            y="411.75"
+            width="73"
+            height="25"
+            rx="1.24"
+            fill="#ff6347"
+          />
           <path
             transform="translate(-11.5 -150.75)"
             d="m978.18 606.93l-1.73 2s-21.05 2-20.2 5.39 25.35-4.55 25.35-4.55z"
@@ -428,19 +449,17 @@
       <div class="w-full sm:w-1/2 p-6 mt-6">
         <div class="align-middle">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            2 Lorem ipsum dolor sit amet
+            How do you want to pay?
           </h3>
-          <p class="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc
-            commodo posuere et sit amet ligula.
-            <br />
-            <br />
-            Images from:
-
-            <a class="text-green-500 underline" href="https://undraw.co/">undraw.co</a>
-          </p>
+          <Invoice />
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  input {
+    @apply border border-black p-4 text-black text-xl;
+  }
+</style>

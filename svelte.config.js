@@ -1,11 +1,12 @@
-import sveltePreprocess from 'svelte-preprocess'
-import vercel from '@sveltejs/adapter-vercel';
+import path from "path";
+import sveltePreprocess from "svelte-preprocess";
+import vercel from "@sveltejs/adapter-vercel";
 
 export default {
   preprocess: [
     sveltePreprocess({
       defaults: {
-        style: 'postcss',
+        style: "postcss",
       },
       postcss: true,
     }),
@@ -13,5 +14,14 @@ export default {
 
   kit: {
     adapter: vercel(),
+
+    vite: {
+      resolve: {
+        alias: {
+          $components: path.resolve("src/components"),
+          $lib: path.resolve("src/lib"),
+        },
+      },
+    },
   },
-}
+};
