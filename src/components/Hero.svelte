@@ -1,11 +1,11 @@
 <!--Hero-->
 <div class="pt-24" id="home">
   <div
-    class="container px-3 mx-auto lg:flex flex-wrap flex-col md:flex-row items-center"
+    class="container px-3 mx-auto xl:flex flex-wrap flex-col md:flex-row items-center"
   >
     <!--Left Col-->
     <div
-      class="flex flex-col w-full lg:w-2/5 justify-center items-start text-center md:text-left md:px-10"
+      class="flex flex-col w-full xl:w-2/5 justify-center items-start text-center md:text-left md:px-10"
     >
       <p class="uppercase tracking-loose w-full">
         We build and deploy ASIC heated greenhouses
@@ -15,25 +15,35 @@
         yield from bitcoin mining profits, while supporting bitcoin adoption in
         a small remote community.
       </h1>
-      <p class="leading-normal text-xl md:text-2xl mb-8">
-        Miners, powered by solar energy provide heat for the greenhouse 365
-        growing days per year. Locals benefit from work opportunities and a home
-        grown food source. Investors get an increasing return on profit by
-        utilizing the world's future base monetary network. This is the circular
-        economy in action.
-      </p>
+
+      <ul
+        class="xl:w-full md:w-[90%] w-[85%] mx-auto leading-normal text-xl md:text-2xl mb-8 list-disc"
+      >
+        <li>
+          Miners, powered by solar energy provide heat for the greenhouse 365
+          growing days per year.
+        </li>
+        <li>
+          Locals benefit from work opportunities and a home grown food source.
+        </li>
+        <li>
+          Investors get an increasing return on profit by utilizing the world's
+          future base monetary network.
+        </li>
+        <li>This is the circular economy in action.</li>
+      </ul>
     </div>
     <!--Right Col-->
-    <div class="w-full lg:w-3/5 py-6 text-center">
+    <div class="w-full xl:w-3/5 py-6 text-center">
       <img
-        class="w-full lg:w-4/5 z-50 rounded-3xl"
+        class="w-full mx-auto lg:w-4/5 z-50 rounded-3xl"
         src="greenhouse.jpg"
         alt="hero"
       />
     </div>
   </div>
 </div>
-<div class="relative -mt-12 lg:-mt-24">
+<div class="relative -mt-4 md:-mt-12 xl:-mt-24">
   <svg
     viewBox="0 0 1428 174"
     version="1.1"
