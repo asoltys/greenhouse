@@ -50,6 +50,6 @@
     <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
   </div>
   <h3 class="my-4 text-3xl leading-tight">
-    3.14 million shares are available priced at 2000 satoshis each.
+    3.14 million shares are available priced at 2100 satoshis each.
   </h3>
 </section>
