@@ -24,7 +24,7 @@
           growing days per year.
         </li>
         <li>
-          Locals benefit from work opportunities and a home grown food source.
+          Locals benefit from work opportunities and a home-grown food source.
         </li>
         <li>
           Investors get an increasing return on profit by utilizing the world's
