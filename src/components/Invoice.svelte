@@ -1,4 +1,5 @@
 <script>
+  export let shares;
   import { onMount } from "svelte";
   import QRCode from "qrcode";
 
@@ -34,7 +35,7 @@
         width: "250",
         height: "250",
         color: {
-          dark: "#1f4e6c",
+          dark: "#000000",
           light: "#FFFFFF",
         },
       },
@@ -45,18 +46,18 @@
     );
   };
 
-  let amount = 200;
+  let amount = (shares * 2100) / 100000000;
   let copied;
 </script>
 
-<div class="container column">
+<div class="container column text-black">
   <div class="container mb">
-    Purchasing {amount} shares
+    Purchasing <b>{shares}</b> shares
   </div>
 
   <div class="page-block">
     <div class="container">
-      Please send <b style="margin: 0 0.3em">{amount} BTC</b> to:
+      Please send <b>{amount} BTC</b> to:
     </div>
 
     <div id="payment-qr-code" class="container column">
@@ -69,14 +70,15 @@
         <a href={url} target="_blank">
           <p
             id="payment-url"
-            style="word-wrap: break-word; max-width: 600px; padding: 0 15px; margin: 0 auto; line-height: 1.5em;"
+            style="word-wrap: break-word; margin: 0 auto; line-height: 1.5em;"
+            class="font-bold text-[#F7931A]"
           >
             {address}
           </p>
         </a>
       </div>
       <div class="container mb">
-        <button on:click={copy}>
+        <button on:click={copy} class="font-bold">
           {#if copied}
             Copied!
           {:else}
@@ -87,13 +89,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  #payment-qr-code {
-    width: 100%;
-  }
-  #payment-qr-code p {
-    text-align: center;
-    margin: 0;
-  }
-</style>

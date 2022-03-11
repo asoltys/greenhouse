@@ -1,8 +1,9 @@
 <script lang="ts">
-  import Button from './components/Button.svelte';
+  import Button from "./components/Button.svelte";
 </script>
 
 <!-- Change the colour #f8fafc to match the previous section colour -->
+<div id="invest" />
 <svg
   class="wave-top"
   viewBox="0 0 1439 147"
@@ -38,13 +39,17 @@
     </g>
   </g>
 </svg>
-<section class="container mx-auto text-center py-6 mb-12">
-  <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-    Invest Now
+<section class="container mx-auto text-center px-4 pb-6 mb-12">
+  <h1
+    id="invest"
+    class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+  >
+    Invest
   </h1>
   <div class="w-full mb-4">
     <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
   </div>
-  <h3 class="my-4 text-3xl leading-tight">3.14 million shares are available priced at 2000 satoshis each</h3>
-  <Button>Get Started</Button>
+  <h3 class="my-4 text-3xl leading-tight">
+    3.14 million shares are available priced at 2000 satoshis each.
+  </h3>
 </section>

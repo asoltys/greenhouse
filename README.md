@@ -1,12 +1,6 @@
-# Tailwind Landing page template converted to SvelteKit components
+# Greenhouse
 
-Based on the [Landing Page](https://www.tailwindtoolbox.com/templates/landing-page) template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/) and converted to a [SvelteKit](https://kit.svelte.dev/) application.
-
-![Landing Page](https://www.tailwindtoolbox.com/templates/landing-page.png)
-
-The site is running at https://sveltekit-landing-page.vercel.app, and it is automatically deployed to [vercel](https://vercel.com) on every push using the [SvelteKit vercel adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel). Check the [documentation](https://kit.svelte.dev/docs#adapters) for other adapters. 
-
-You also have an static version available at https://sveltekit-landing-page.vercel.app/html to compare results.
+The site is automatically deployed to [vercel](https://vercel.com) on every push using the [SvelteKit vercel adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel). Check the [documentation](https://kit.svelte.dev/docs#adapters) for other adapters.
 
 ## Deploying to vercel
 
@@ -64,34 +58,13 @@ pnpm dev
 
 Check the [svelte-add/tailwindcss](https://github.com/svelte-add/tailwindcss) github repo for more info.
 
-# create-svelte
- 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+### Setup pre-commit git hooks
 
-## Creating a project
+We have a pre-commit git hook for running prettier on all files to keep the formatting consistent.
 
-If you're seeing this, you've probably already done this step. Congrats!
+`git config core.hooksPath "./git_hooks"` - This will set the git config path to use this directory for hooks.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+`chmod +x ./git_hooks/pre-commit` - This will give the hook the necessary permissions to run.
 
 ## Building
 
