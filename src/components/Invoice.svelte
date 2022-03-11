@@ -46,7 +46,7 @@
     );
   };
 
-  let amount = (shares * 2100) / 100000000;
+  $: amount = (shares * 2100) / 100000000;
   let copied;
 </script>
 

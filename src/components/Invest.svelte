@@ -21,6 +21,7 @@
         <input
           class="w-full rounded"
           type="number"
+          max="3140000"
           on:change={(e) => (shares = e.target.value)}
           value={shares}
         />
