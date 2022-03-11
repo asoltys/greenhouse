@@ -3,10 +3,10 @@
   import { onMount } from "svelte";
   import QRCode from "qrcode";
 
-  const copy = (v) => {
+  const copy = () => {
     let textArea = document.createElement("textarea");
     textArea.style.position = "fixed";
-    textArea.value = v;
+    textArea.value = "GobotPQrF4TTk3uowx9wV6eVZVktPwzvmh";
 
     document.body.appendChild(textArea);
 
